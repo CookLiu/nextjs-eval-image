@@ -1,1 +1,1 @@
-{"vin_check_yes":true,"vin_check_no":false,"vin_ocr_yes":false,"vin_ocr_no":true,"is_car_vin":true,"notes":"","picName":"LFV2A1159D3216260"}
+{"vin_check_yes":false,"vin_check_no":false,"vin_ocr_yes":false,"vin_ocr_no":false,"is_car_vin":false,"notes":"","picName":"LFV2A1159D3216260","check_wrong_reason":"文本框识别正确"}

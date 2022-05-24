@@ -51,6 +51,7 @@ export default function Post({ postData }) {
       is_car_vin: event.target.is_car_vin.checked,
       notes: event.target.notes.value,
       picName: event.target.picName.value,
+      check_wrong_reason: event.target.check_wrong_reason.value,
     }
 
     const JSONdata = JSON.stringify(data)
@@ -111,9 +112,9 @@ export default function Post({ postData }) {
           <br></br>
         <label htmlFor="check_wrong_reason">文本框错误情况分类：</label>
           <select name="check_wrong_reason" id="reason_seletor">
+            <option value="文本框识别正确">文本框识别正确</option>
             <option value="部分文本框检测丢失">部分文本框检测丢失</option>
             <option value="文本框未丢失，但是较小，导致后面识别数据不全">文本框未丢失，但是较小，导致后面识别数据不全</option>
-            <option value="文本框识别正确">文本框识别正确</option>
             <option value="一个文本框被分割成不合理的多个（小）框">一个文本框被分割成不合理的多个（小）框</option>
             <option value="有文本，但是无任何文本识别框">有文本，但是无任何文本识别框</option>
             <option value="图像本身无文本">图像本身无文本</option>
