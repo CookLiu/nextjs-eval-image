@@ -1,11 +1,11 @@
-## this is a test  
+### 文本检测框个数
+1
 
-### key 1 
-### key 2 
-### key 3 
+### 文本识别结果
+- LVGCJE239FG050360
 
-## test for unsorted list 
-- this 
-- is 
-- a 
-- test 
+### vin码识别预处理后结果（可能）
+**LVGCJE239FG050360**
+
+### 识别类型标签
+识别有17位数据，原始数据“解析成功vin码”为空

@@ -87,20 +87,20 @@ export default function Post({ postData }) {
         alt={postData.id} />
       </div>
       <br></br>
-      <details open>
+      <details open style={{borderTop: '1px solid red', paddingTop: '20px'}}>
         <div
           dangerouslySetInnerHTML={{ __html: postData.content }}
         />
       </details>
       {/* 分割线 */}
       {/* <Divider mt='10px' /> */}
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{borderTop: '1px solid red', paddingTop: '20px'}}>
         <div>
           <input id="picName" name="picName" component="textarea" defaultValue={postData.id}/>
         </div>        
         <br></br>
         <div>
-          <label htmlFor="vin_check">VIN码画框是否成功:</label>
+          <label htmlFor="vin_check" style={{color: 'red',fontWeight: 'bold'}}>VIN码画框是否成功:</label>
           <div id="vin_check">
             <label htmlFor="vin_check_yes">Yes</label>
             <input type="checkbox" id="vin_check_yes" name="vin_check_yes" />
@@ -110,7 +110,7 @@ export default function Post({ postData }) {
         </div>
         <div>
           <br></br>
-        <label htmlFor="check_wrong_reason">文本框错误情况分类：</label>
+        <label htmlFor="check_wrong_reason" style={{color: 'red',fontWeight: 'bold'}}>文本框错误情况分类：</label>
           <select name="check_wrong_reason" id="reason_seletor">
             <option value="文本框识别正确">文本框识别正确</option>
             <option value="部分文本框检测丢失">部分文本框检测丢失</option>
@@ -123,7 +123,7 @@ export default function Post({ postData }) {
         <br></br>
         <br></br>
         <div>
-          <label htmlFor="vin_ocr">VIN码OCR是否成功:</label>
+          <label htmlFor="vin_ocr" style={{color: 'red',fontWeight: 'bold'}}>VIN码OCR是否成功:</label>
           <div id="vin_ocr">
             <label htmlFor="vin_ocr_yes">Yes</label>
             <input type="checkbox" id="vin_ocr_yes" name="vin_ocr_yes" />
@@ -133,7 +133,7 @@ export default function Post({ postData }) {
         </div>
         <br></br>
         <div>
-          <label htmlFor="is_car_vin">是否接车场景：车窗下VIN照片</label>
+          <label htmlFor="is_car_vin" style={{color: 'red',fontWeight: 'bold'}}>是否接车场景：车窗下VIN照片</label>
           <div>
             <label htmlFor="is_car_vin">Yes</label>
             <input type="checkbox" id="is_car_vin" name="is_car_vin"  />
@@ -141,7 +141,7 @@ export default function Post({ postData }) {
         </div>
         <br></br>
         <div>
-          <label>备注</label>
+          <label style={{color: 'red',fontWeight: 'bold'}}>备注</label>
           <div>
             <input id="notes" name="notes" component="textarea" />
           </div>
